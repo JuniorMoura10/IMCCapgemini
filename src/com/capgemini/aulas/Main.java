@@ -11,13 +11,13 @@ public class Main {
         Scanner leitor = new Scanner(System.in);
 
         System.out.println("Qual o seu nome? ");
-        pessoa1.nome = leitor.next();
+        pessoa1.setNome(leitor.next());
 
-        System.out.println(pessoa1.nome + ", digite o seu peso: ");
-        pessoa1.peso = leitor.nextFloat();
+        System.out.println(pessoa1.getNome() + ", digite o seu peso: ");
+        pessoa1.setPeso(leitor.nextFloat());
 
         System.out.println("Agora, digite a sua altura: ");
-        pessoa1.altura = leitor.nextFloat();
+        pessoa1.setAltura(leitor.nextFloat());
 
         System.out.println("O seu IMC é: " + pessoa1.calcularIMC());
     }
